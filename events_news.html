@@ -1,0 +1,146 @@
+<!--
+ * @ Author: MyoMoonlight
+ * @ Create Time: 2024-08-25 01:44:54
+ * @ Modified time: 2025-05-13 00:50:16
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Events & News | DRCK</title>
+        <link rel="icon" type="image/x-icon" href="/media/Crest - Colored.png">
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/common-2.css" />
+        <link rel="stylesheet" href="css/events_news.css" />
+    </head>
+    <body>
+        <main id="main">
+            <div id="banner">
+                <a href="index.html" class="logo"><img src="media/logo-top-white.png" alt="Logo" /></a>
+                <img src="media/events_news/520423933_1210141934458193_5157268177658803524_n.jpg" />
+                <img src="media/events_news/506943282_1179023224236731_7842668854135316776_n.jpg" />
+                <img src="media/events_news/520143624_1236831161789270_6120536901811783993_n.jpg" />
+                <img src="media/events_news/537684942_1236940095111710_471834203918734101_n.jpg" />
+                <img src="media/events_news/561616096_1280356840770035_2933045079258342531_n.jpg" />
+                <h1>EVENTS AND NEWS</h1>
+                <section><i class="active"></i><i></i><i></i><i></i><i></i></section>
+            </div>
+            <div id="events">
+                <h1>Our Latest Events</h1>
+                <img src="media/left-arrow-black.png" onclick="scrollSlider(0,0)" alt="<" />
+                <img src="media/right-arrow-black.png" onclick="scrollSlider(1,0)" alt=">" />
+                <template id="template_eventcard">
+                    <div class="card-cnt">
+                        <div>
+                            <div style="background-image: url(media/light-gray.jpg)"><span>Event Name</span></div>
+                            <div>
+                                <img src="media/logo.jpg" alt="Event Logo" />
+                                <p>Event description goes here, Event description goes here.</p>
+                                <button class="explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <section>
+                    <!-- <div class="card-cnt">
+                        <div>
+                            <div style="background-image: url(media/dm4-pt.jfif)"><span>Event Name</span></div>
+                            <div>
+                                <img src="media/logo.jpg" alt="Event Logo" />
+                                <p>Event description goes here, Event description goes here.</p>
+                                <button class="explore">Explore</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </section>
+            </div>
+            <div id="news">
+                <h1>Our Latest News</h1>
+                <img src="media/left-arrow-black.png" onclick="scrollSlider(0,1)" alt="<" />
+                <img src="media/right-arrow-black.png" onclick="scrollSlider(1,1)" alt=">" />
+                <section>
+                    <!-- <div class="card-cnt">
+                        <div>
+                            <div style="background-image: url(media/dm4-pt.jfif)"><span>Event Name</span></div>
+                            <div>
+                                <img src="media/logo.jpg" alt="Event Logo" />
+                                <p>Event description goes here, Event description goes here.</p>
+                                <button class="explore">Explore</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </section>
+            </div>
+        </main>
+
+        <header id="header">
+            <section>
+                <input type="search" name="" id="inp-srch" />
+                <div id="menu-btn" onclick="menu();"><i></i><i></i><i></i></div>
+            </section>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events_news.html">News And Events</a></li>
+                <li><a href="academics.html">Acadamics</a></li>
+                <li><a href="societies.html">Clubs & Societies</a></li>
+                <li><a href="sports.html">Sports & Games</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </header>
+        <footer id="footer">
+            <section>
+                <div>
+                    <img src="media/logo-footer.png" alt="DRC" />
+                    <p>
+                        Dharmaraja College, founded in 1887 by sir Henry Steel Olcott, is a premier Buddhist boys'
+                        school in Kandy, Sri Lanka with around 300+ teaching staff and over 5,000 students.
+                    </p>
+                </div>
+                <div>
+                    <h3></h3>
+                    <ul>
+                        <li><img src="media/call.png" />081 000 0000</li>
+                        <li><img src="media/call.png" />081 000 0000</li>
+                        <li><img src="media/location.png" />NO 0, Some road, Somewhere.</li>
+                        <li><img src="media/mail.png" />someone@me.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>FOLLOW US</h3>
+                    <h4>GET IN TOUCH WITH US</h4>
+                    <section>
+                        <a href="" target="_blank"><img src="media/facebook.png" alt="Facebook" /></a>
+                        <a href="" target="_blank"><img src="media/instagram.png" alt="Instagram" /></a>
+                        <a href="" target="_blank"><img src="media/whatsapp.png" alt="whatsapp" /></a>
+                    </section>
+                </div>
+            </section>
+            <hr />
+            <h5>All Rights Reserved © 2024 Dharmaraja College</h5>
+        </footer>
+        <script>
+            const header = document.querySelector("#header");
+            var menuOpen = 0;
+            function menu() {
+                if (menuOpen) {
+                    menuOpen = 0;
+                    header.classList.remove("open");
+                } else {
+                    menuOpen = 1;
+                    header.classList.add("open");
+                }
+            }
+            document.querySelector("#main").addEventListener("click", () => {
+                if (menuOpen) {
+                    menuOpen = 0;
+                    header.classList.remove("open");
+                }
+            });
+        </script>
+        <script src="js/sports.js"></script>
+        <script src="js/events_news.js"></script>
+    </body>
+</html>

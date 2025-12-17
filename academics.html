@@ -1,0 +1,160 @@
+<!--
+ * @ Author: MyoMoonlight
+ * @ Create Time: 2024-08-30 03:45:07
+ * @ Modified time: 2025-03-04 17:27:39
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Academics | DRCK</title>
+        <link rel="icon" type="image/x-icon" href="/media/Crest - Colored.png">
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/common-2.css" />
+        <link rel="stylesheet" href="css/academics.css" />
+    </head>
+    <body>
+        <main id="main">
+            <div id="banner">
+                <a href="index.html" class="logo"><img src="media/logo-top-white.png" alt="Logo" /></a>
+                <img src="media/dm1-ls.jpg" />
+                <img src="media/dm2-ls.jpg" />
+                <img src="media/dm3-ls.jpg" />
+                <img src="media/dm4-ls.jpg" />
+                <img src="media/dm5-ls.jpg" />
+                <h1>ACADAMICS</h1>
+                <section><i class="active"></i><i></i><i></i><i></i><i></i></section>
+            </div>
+            <div id="counter">
+                <div><span>Teachers</span><span data-target="200">0</span></div>
+                <div><span>Students</span><span data-target="4200">0</span></div>
+                <div><span>Classes</span><span data-target="100">0</span></div>
+                <div><span>Non-Academic</span><span data-target="75">0</span></div>
+            </div>
+            <div id="features">
+                <section>
+                    <div>
+                        <h2>primary section</h2>
+                        <p>
+                            Education at the College transcends book and quill, seeking to mould a holistic personage
+                            out of every student. Employing the finest teachers in every field and equipped to support
+                            all learning needs, Dharmaraja College strives to produce individuals who make meaningful
+                            contributions to society.
+                        </p>
+                        <a href="academics.html" class="explore">Explore</a>
+                    </div>
+                    <section>
+                        <img src="media/dm4-pt.jfif" /><img src="media/dm4-pt.jfif" /><img src="media/dm4-pt.jfif" />
+                    </section>
+                </section>
+                <section>
+                    <div>
+                        <h2>middle section</h2>
+                        <p>
+                            Dharmaraja College celebrates the freedom given to its students to express themselves. The
+                            College provides a plethora of clubs & societies to select from and the liberty to found a
+                            new community. This is the birthplace of idea-driven individuals that seek to make a
+                            difference in the world.
+                        </p>
+                        <a href="socities.html" class="explore">Explore</a>
+                    </div>
+                    <section>
+                        <img src="media/dm1-pt.jfif" /><img src="media/dm1-pt.jfif" /><img src="media/dm1-pt.jfif" />
+                    </section>
+                </section>
+                <section>
+                    <div>
+                        <h2>advance level</h2>
+                        <p>
+                            Taking the field with glory and honour, the gentlemen in Maroon and Light Blue are shaped to
+                            be the epitome of humility in victory and graciousness in defeat. With camaraderie born of
+                            hardship and perseverance birthed by adversity, sportsmen at Dharmaraja College strive to
+                            reach ever greater heights.
+                        </p>
+                        <a href="sports.html" class="explore">Explore</a>
+                    </div>
+                    <section>
+                        <img src="media/dm1-pt.jfif" /><img src="media/dm1-pt.jfif" /><img src="media/dm1-pt.jfif" />
+                    </section>
+                </section>
+            </div>
+            <div id="papers">
+                <h1>Dharmaraja college</h1>
+                <h3>TERM TEST PAPERS</h3>
+                <a href="" class="explore-ttp">COMING SOON</a>
+            </div>
+        </main>
+
+        <header id="header">
+            <section>
+                <input type="search" name="" id="inp-srch" />
+                <div id="menu-btn" onclick="menu();"><i></i><i></i><i></i></div>
+            </section>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events_news.html">News And Events</a></li>
+                <li><a href="academics.html">Acadamics</a></li>
+                <li><a href="societies.html">Clubs & Societies</a></li>
+                <li><a href="sports.html">Sports & Games</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </header>
+        <footer id="footer">
+            <section>
+                <div>
+                    <img src="media/logo-footer.png" alt="DRC" />
+                    <p>
+                        Dharmaraja College, founded in 1887 by sir Henry Steel Olcott, is a premier Buddhist
+                        boys'school in Kandy, Sri Lanka with around
+                        300+ teaching staff and over 5,000 students
+                    </p>
+                </div>
+                <div>
+                    <h3></h3>
+                    <ul>
+                        <li><img src="media/call.png" />081 000 0000</li>
+                        <li><img src="media/call.png" />081 000 0000</li>
+                        <li><img src="media/location.png" />NO 0, Some road, Somewhere.</li>
+                        <li><img src="media/mail.png" />someone@me.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>FOLLOW US</h3>
+                    <h4>GET IN TOUCH WITH US</h4>
+                    <section>
+                        <a href="" target="_blank"><img src="media/facebook.png" alt="Facebook" /></a>
+                        <a href="" target="_blank"><img src="media/instagram.png" alt="Instagram" /></a>
+                        <a href="" target="_blank"><img src="media/whatsapp.png" alt="whatsapp" /></a>
+                    </section>
+                </div>
+            </section>
+            <hr />
+            <h5>All Rights Reserved © 2024 Dharmaraja College</h5>
+        </footer>
+        <script>
+            const header = document.querySelector("#header");
+            var menuOpen = 0;
+            function menu() {
+                if (menuOpen) {
+                    menuOpen = 0;
+                    header.classList.remove("open");
+                } else {
+                    menuOpen = 1;
+                    header.classList.add("open");
+                }
+            }
+            document.querySelector("#main").addEventListener("click", () => {
+                if (menuOpen) {
+                    menuOpen = 0;
+                    header.classList.remove("open");
+                }
+            });
+        </script>
+        <script src="js/sports.js"></script>
+        <script src="js/home.js" type="module"></script>
+        <script src="js/academics.js" type="module"></script>
+    </body>
+</html>
