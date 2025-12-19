@@ -7,39 +7,52 @@
 h1 {
     text-align: center;
 }
-
 #vm {
-    margin: auto;
-    width: fit-content;
-    padding: 50px 1em;
-    & > section {
-        width: fit-content;
-        padding: 1em 2em;
-        box-shadow: 1px 1px 10px #0006;
-        border-radius: 1em;
-        max-width: 500px;
-        min-width: 400px;
-        & > h2 {
-            font-size: 3em;
-            font-family: "Old-English";
-        }
-        & > p {
-            font-size: 1.5em;
-        }
-        &:nth-child(1) {
-            border-top: 5px solid maroon;
-            border-left: 5px solid rgb(126, 207, 235);
-            margin-right: 50px;
-        }
-        &:nth-child(2) {
-            margin-top: 50px;
-            margin-left: 50px;
-            border-bottom: 5px solid maroon;
-            border-right: 5px solid rgb(126, 207, 235);
-            text-align: right;
-        }
-    }
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 4em;
+    padding: 5em 10%;
 }
+
+/* Individual cards */
+#vm > section {
+    flex: 1;
+    max-width: 480px;
+    padding: 2.5em 2.5em;
+    box-shadow: 1px 1px 15px #0004;
+    border-radius: 1.4em;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Typography */
+    #vm > section > h2 {
+    font-size: 3em;
+    font-family: "Old-English";
+    margin-bottom: 0.4em;
+}
+
+#vm > section > p {
+    font-size: 1.4em;
+}
+
+/* Vision */
+#vm > section:first-child {
+    border-top: 5px solid maroon;
+    border-left: 5px solid rgb(126, 207, 235);
+}
+
+/* Mission */
+#vm > section:last-child {
+    border-bottom: 5px solid maroon;
+    border-right: 5px solid rgb(126, 207, 235);
+}
+    
 
 #history > h1,
 #symb > h1 {
@@ -96,10 +109,16 @@ h1 {
 }
 
 @media screen and (max-width: 450px) {
-    #vm > section {
-        font-size: 0.8em;
-        min-width: 250px;
-    }
+     #vm {
+    flex-direction: column;
+    gap: 2em;
+    padding: 3em 1.5em;
+}
+
+#vm > section {
+    max-width: 100%;
+}
+
     #history > p {
         padding: 0 1em;
     }
@@ -109,3 +128,4 @@ h1 {
         padding: 30px;
     }
 }
+
